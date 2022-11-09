@@ -89,16 +89,19 @@
     &__block {
         width: 50%;
         padding: 126px 0;
-        max-width: 470px;
+        max-width: 500px;
 
         .subtitle {
             font-size: 15px;
         }
 
         .title {
-            font-size: 64px;
+            font-size: 54px;
             font-weight: $fontbig;
             margin-top: 19px;
+            line-height: 61px;
+
+
 
             span {
                 color: $color-secondary;
@@ -109,6 +112,7 @@
             margin-top: 24px;
             font-size: 18px;
             line-height: 30px;
+            max-width: 438px;
 
             span {
                 font-weight: 900;
@@ -116,11 +120,26 @@
 
         }
     }
+
+    form {
+        display: flex;
+        margin-top: 10px;
+
+        input[type="email"] {
+            width: 70%;
+            background: #FFFFFF;
+            border: 1px solid $color-secondary;
+            border-radius: 27.5px 0px 0px 27.5px;
+            padding: 10px 0 10px 26px;
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            background: $color-secondary;
+            border-radius: 0px 27.5px 27.5px 0px;
+            text-align: center;
+            color: #fff;
+
+        }
+    }
 }
-
-
-
-
-
-
-.text {}

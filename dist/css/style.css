@@ -198,7 +198,7 @@ h6 {
 .hero__block {
   width: 50%;
   padding: 126px 0;
-  max-width: 470px;
+  max-width: 500px;
 }
 
 .hero__block .subtitle {
@@ -206,9 +206,10 @@ h6 {
 }
 
 .hero__block .title {
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 700;
   margin-top: 19px;
+  line-height: 61px;
 }
 
 .hero__block .title span {
@@ -219,10 +220,34 @@ h6 {
   margin-top: 24px;
   font-size: 18px;
   line-height: 30px;
+  max-width: 438px;
 }
 
 .hero__block .text span {
   font-weight: 900;
+}
+
+.hero form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.hero form input[type=email] {
+  width: 70%;
+  background: #FFFFFF;
+  border: 1px solid #6F2DFF;
+  border-radius: 27.5px 0px 0px 27.5px;
+  padding: 10px 0 10px 26px;
+}
+
+.hero form input[type=submit] {
+  width: 30%;
+  background: #6F2DFF;
+  border-radius: 0px 27.5px 27.5px 0px;
+  text-align: center;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
