@@ -101,6 +101,95 @@ h6 {
   margin: 0 auto;
 }
 
+.number {
+  margin-top: 76px;
+}
+
+.number__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.number__right {
+  width: 50%;
+  padding: 179px 0;
+  max-width: 401px;
+}
+
+.number__right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.number__right .text {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1C1C1C;
+}
+
+.number__right .text p {
+  margin-bottom: 10px;
+}
+
+.number__right .text a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #1C1C1C;
+}
+
+.number__left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.number__left .left-item {
+  max-width: 309px;
+  width: 100%;
+  border-left: 1px solid #E0E0E0;
+  padding-left: 16.5px;
+  padding-top: 8px;
+}
+
+.number__left .title-item {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.number__left .text-item {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 156px;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #1C1C1C;
+}
+
 .header {
   padding: 15px;
 }
@@ -127,6 +216,7 @@ h6 {
 .header__list li {
   position: relative;
   padding: 20px;
+  padding-bottom: 17px;
   color: #1C1C1C;
   border-bottom: 3px solid transparent;
   -webkit-transition: all 0.6s ease 0s;
@@ -159,30 +249,23 @@ h6 {
   background-color: transparent;
 }
 
-.header__login button {
+.header__login .login-user {
+  margin: 0 20px 0 38px;
+  color: #1C1C1C;
+}
+
+.header__login .login-user:hover {
+  color: #6F2DFF;
+}
+
+.button-purple {
   padding: 13px 34px;
   border-radius: 20px;
   -webkit-transition: all 0.6s ease 0s;
   -o-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
-  color: #1C1C1C;
-}
-
-.header__login button:hover {
-  color: #fff;
+  color: #FFFFFF !important;
   background-color: #6F2DFF;
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
-}
-
-.header__login a {
-  margin: 0 20px 0 38px;
-  color: #1C1C1C;
-}
-
-.header__login a:hover {
-  color: #6F2DFF;
 }
 
 .hero {
@@ -232,6 +315,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
+  max-width: 438px;
 }
 
 .hero form input[type=email] {
@@ -239,15 +323,106 @@ h6 {
   background: #FFFFFF;
   border: 1px solid #6F2DFF;
   border-radius: 27.5px 0px 0px 27.5px;
-  padding: 10px 0 10px 26px;
+  padding: 12.5px 0 12.5px 26px;
+}
+
+.hero form input[type=email]::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.27);
+}
+
+.hero form input[type=email]::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.27);
+}
+
+.hero form input[type=email]:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.27);
+}
+
+.hero form input[type=email]::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.27);
+}
+
+.hero form input[type=email]::placeholder {
+  color: rgba(0, 0, 0, 0.27);
 }
 
 .hero form input[type=submit] {
   width: 30%;
+  font-size: 15px;
   background: #6F2DFF;
   border-radius: 0px 27.5px 27.5px 0px;
   text-align: center;
   color: #fff;
+}
+
+.firm__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.firm__row .item a {
+  display: block;
+  cursor: pointer;
+}
+
+.firm__customer {
+  text-align: center;
+  padding-top: 26px;
+}
+
+.button-customer a {
+  color: #1C1C1C;
+  border-bottom: 2px solid #FFFFFF;
+  position: relative;
+  padding: 2px 15px 2px 2px;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  font-weight: 700;
+}
+
+.button-customer a::after {
+  position: absolute;
+  font-size: 10px;
+  content: "\f054";
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  width: 10px;
+  height: 10px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: right 0.6s ease 0s;
+  -o-transition: right 0.6s ease 0s;
+  transition: right 0.6s ease 0s;
+}
+
+.button-customer a:hover {
+  border-bottom: 2px solid #6F2DFF;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.button-customer a:hover::after {
+  right: -5px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-16 {
+  font-size: 16px;
 }
 
 @media (max-width: 992px) {
