@@ -183,11 +183,134 @@ h6 {
   max-width: 156px;
 }
 
+.info__title {
+  text-align: center;
+}
+
+.info__title h4 {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info__item {
+  padding: 5px;
+  text-align: center;
+  margin-top: 56px;
+}
+
+.info__item h4 {
+  font-weight: 700;
+  font-size: 19px;
+  margin: 45px 0 16px 0;
+}
+
+.info__item p {
+  max-width: 316px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.power {
+  margin-top: 76px;
+  background-color: #F5F5F5;
+  padding-bottom: 95px;
+}
+
+.power__title {
+  padding-top: 96px;
+  text-align: center;
+}
+
+.power__title h4 {
+  margin: 28px 0 90px 0;
+}
+
+.power__content img {
+  width: 100%;
+}
+
+.power__content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 76px;
+}
+
+.power__content .button .button-purple {
+  margin-right: 11px;
+}
+
+.power__content .button .button-purple a {
+  color: #fff;
+}
+
+.power__content .button .button-white {
+  margin-left: 11px;
+}
+
+.recommendation {
+  padding-bottom: 95px;
+}
+
+.recommendation__title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.recommendation__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recommendation__row .item {
+  width: 33.33%;
+  text-align: center;
+  padding: 5px;
+}
+
+.recommendation__row .item h4 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 45px;
+}
+
+.recommendation__row .item p {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 265px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .title h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 45px;
   color: #1C1C1C;
+  padding-top: 75px;
 }
 
 .header {
@@ -266,6 +389,16 @@ h6 {
   transition: all 0.6s ease 0s;
   color: #FFFFFF !important;
   background-color: #6F2DFF;
+}
+
+.button-white {
+  padding: 13px 34px;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  color: #6F2DFF;
+  background-color: #fff;
 }
 
 .hero {

@@ -70,7 +70,125 @@
     }
 }
 
+.info {
 
+    &__title {
+        text-align: center;
+
+        h4 {
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 5px;
+        text-align: center;
+        margin-top: 56px;
+
+        h4 {
+            font-weight: 700;
+            font-size: 19px;
+            margin: 45px 0 16px 0;
+        }
+
+        p {
+            max-width: 316px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+}
+
+.power {
+    margin-top: 76px;
+    background-color: #F5F5F5;
+    padding-bottom: 95px;
+
+    &__title {
+        padding-top: 96px;
+        text-align: center;
+
+        h4 {
+            margin: 28px 0 90px 0;
+        }
+
+    }
+
+    &__content {
+        img {
+            width: 100%;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 76px;
+
+            .button-purple {
+                margin-right: 11px;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            .button-white {
+                margin-left: 11px;
+            }
+        }
+    }
+}
+
+.recommendation {
+    padding-bottom: 95px;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+        .item {
+            width: 33.33%;
+            text-align: center;
+            padding: 5px;
+
+
+            h4 {
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 45px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 22px;
+                max-width: 265px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+
+
+
+    }
+}
 
 .title {
     h2 {
@@ -78,5 +196,6 @@
         font-size: 40px;
         line-height: 45px;
         color: $color-first;
+        padding-top: 75px;
     }
 }

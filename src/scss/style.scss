@@ -2,6 +2,7 @@
 @import "grid";
 @import "variables";
 @import "main";
+@import "slider";
 
 
 .header {
@@ -73,6 +74,14 @@
     color: #FFFFFF !important;
     background-color: $color-secondary;
 
+}
+
+.button-white {
+    padding: 13px 34px;
+    border-radius: 20px;
+    transition: all .6s ease 0s;
+    color: $color-secondary;
+    background-color: #fff;
 }
 
 
