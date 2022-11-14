@@ -1,6 +1,8 @@
 @import "reset";
 @import "grid";
 @import "variables";
+@import "main";
+@import "slider";
 
 
 .header {
@@ -19,6 +21,7 @@
         li {
             position: relative;
             padding: 20px;
+            padding-bottom: 17px;
             color: $color-first;
             border-bottom: 3px solid transparent;
             transition: all .6s ease 0s;
@@ -51,20 +54,7 @@
     }
 
     &__login {
-        button {
-            padding: 13px 34px;
-            border-radius: 20px;
-            transition: all .6s ease 0s;
-            color: $color-first;
-
-            &:hover {
-                color: #fff;
-                background-color: $color-secondary;
-                transition: all .6s ease 0s;
-            }
-        }
-
-        a {
+        .login-user {
             margin: 0 20px 0 38px;
             color: $color-first;
 
@@ -73,8 +63,29 @@
             }
 
         }
+
     }
 }
+
+.button-purple {
+    padding: 13px 34px;
+    border-radius: 20px;
+    transition: all .6s ease 0s;
+    color: #FFFFFF !important;
+    background-color: $color-secondary;
+
+}
+
+.button-white {
+    padding: 13px 34px;
+    border-radius: 20px;
+    transition: all .6s ease 0s;
+    color: $color-secondary;
+    background-color: #fff;
+}
+
+
+
 
 .hero {
     background-image: url(../img/hero-bg.jpg);
@@ -89,16 +100,19 @@
     &__block {
         width: 50%;
         padding: 126px 0;
-        max-width: 470px;
+        max-width: 500px;
 
         .subtitle {
             font-size: 15px;
         }
 
         .title {
-            font-size: 64px;
+            font-size: 54px;
             font-weight: $fontbig;
             margin-top: 19px;
+            line-height: 61px;
+
+
 
             span {
                 color: $color-secondary;
@@ -109,6 +123,7 @@
             margin-top: 24px;
             font-size: 18px;
             line-height: 30px;
+            max-width: 438px;
 
             span {
                 font-weight: 900;
@@ -116,11 +131,107 @@
 
         }
     }
+
+    form {
+        display: flex;
+        margin-top: 10px;
+        max-width: 438px;
+
+        input[type="email"] {
+            width: 70%;
+            background: #FFFFFF;
+            border: 1px solid $color-secondary;
+            border-radius: 27.5px 0px 0px 27.5px;
+            padding: 12.5px 0 12.5px 26px;
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.27);
+            }
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            font-size: 15px;
+            background: $color-secondary;
+            border-radius: 0px 27.5px 27.5px 0px;
+            text-align: center;
+            color: #fff;
+
+        }
+    }
+}
+
+.firm {
+
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+
+        .item {
+            a {
+                display: block;
+
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    &__customer {
+        text-align: center;
+        padding-top: 26px;
+
+
+    }
 }
 
 
 
+.button-customer {
+    a {
+        color: $color-first;
+        border-bottom: 2px solid #FFFFFF;
+        position: relative;
+        padding: 2px 15px 2px 2px;
+        transition: all .6s ease 0s;
+        font-weight: 700;
 
+        &::after {
+            position: absolute;
+            font-size: 10px;
+            content: "\f054";
+            font-weight: 700;
+            font-family: $font-awesome;
+            width: 10px;
+            height: 10px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: right .6s ease 0s;
 
+        }
 
-.text {}
+        &:hover {
+
+            &::after {
+                right: -5px;
+            }
+
+            border-bottom: 2px solid $color-secondary;
+            transition: all .6s ease 0s;
+        }
+    }
+}
+
+.text {
+    &-14 {
+        font-size: 14px;
+    }
+
+    &-16 {
+        font-size: 16px;
+    }
+
+}
