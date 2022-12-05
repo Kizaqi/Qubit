@@ -73,5 +73,5 @@ $(document).ready(function(){
 // })
 
   
-//   burgerMenu('.burger-menu');
+burgerMenu('.burger-menu');
   
