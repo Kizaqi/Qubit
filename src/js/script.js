@@ -41,6 +41,37 @@ $(document).ready(function(){
       }
     }
   }
+//   $('.content .owl-carousel ').owlCarousel({
+//     rtl:false,
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     dots:false,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:2
+//         }
+//     }
+// }
+// );
+
+// var owl = $('.owl-carousel');
+// owl.owlCarousel();
+// Go to the next item
+// $('.next').click(function() {
+//     owl.trigger('next.owl.carousel');
+// })
+
+// $('.previous').click(function() {
+//     owl.trigger('prev.owl.carousel', [300]);
+// })
+
   
-  burgerMenu('.burger-menu');
+//   burgerMenu('.burger-menu');
   

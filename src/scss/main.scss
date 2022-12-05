@@ -4,6 +4,7 @@
     &__row {
         display: flex;
         justify-content: space-between;
+
     }
 
     &__right {
@@ -16,6 +17,7 @@
             align-items: center;
             margin: 50px 0;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .text {
@@ -128,6 +130,7 @@
             display: flex;
             justify-content: center;
             margin-top: 76px;
+            flex-wrap: wrap;
 
             .button-purple {
                 margin-right: 11px;

@@ -4,6 +4,7 @@
     &__row {
         display: flex;
         padding: 75px 0;
+        flex-wrap: wrap;
 
         .title {
             margin: 40px 0;
