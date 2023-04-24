@@ -1,0 +1,27 @@
+.social {
+  text-align: center;
+  &__item {
+    .sub-title {
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 45px;
+      color: #1c1c1c;
+    }
+    .row {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        padding: 15px;
+        font-size: 20px;
+        color: #000;
+        transition: 0.5s all ease;
+        &:hover {
+          transition: 0.5s all ease;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@import "reset";
+@import "grid";
+@import "variables";
+@import "main";
+@import "slider";
+@import "specialize";
+@import "connect";
+@import "book-demo";
+@import "social";
+@import "footer";
+@import "header";
+
+.button-purple {
+  padding: 13px 34px;
+  border-radius: 20px;
+  transition: 0.5s ease all;
+  color: #ffffff;
+  background-color: $color-secondary;
+  &:hover {
+    color: $color-secondary;
+    background: white;
+    transition: 0.5s ease all;
+  }
+}
+
+.button-white {
+  padding: 13px 34px;
+  border-radius: 20px;
+  transition: 0.5s ease all;
+  color: $color-secondary;
+  background-color: #fff;
+  &:hover {
+    background: $color-secondary;
+    color: white;
+    transition: 0.5s ease all;
+  }
+}
+
+.hero {
+  background-image: url(../img/hero-bg.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+
+  &__block {
+    width: 50%;
+    padding: 126px 0;
+    max-width: 500px;
+
+    .subtitle {
+      font-size: 15px;
+    }
+
+    .title {
+      font-size: 54px;
+      font-weight: $fontbig;
+      margin-top: 19px;
+      line-height: 61px;
+
+      span {
+        color: $color-secondary;
+      }
+    }
+
+    .text {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 438px;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.firm {
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+    .item {
+      a {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__customer {
+    text-align: center;
+    padding-top: 26px;
+  }
+}
+
+form {
+  display: flex;
+  margin-top: 10px;
+  max-width: 438px;
+
+  input[type="email"] {
+    width: 70%;
+    background: #ffffff;
+    border: 1px solid $color-secondary;
+    border-radius: 27.5px 0px 0px 27.5px;
+    padding: 12.5px 0 12.5px 26px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.27);
+    }
+  }
+
+  input[type="submit"] {
+    width: 30%;
+    font-size: 15px;
+    background: $color-secondary;
+    border-radius: 0px 27.5px 27.5px 0px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.button-customer {
+  a {
+    color: $color-first;
+    border-bottom: 2px solid #ffffff;
+    position: relative;
+    padding: 2px 15px 2px 2px;
+    transition: all 0.6s ease 0s;
+    font-weight: 700;
+
+    &::after {
+      position: absolute;
+      font-size: 10px;
+      content: "\f054";
+      font-weight: 700;
+      font-family: $font-awesome;
+      width: 10px;
+      height: 10px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: right 0.6s ease 0s;
+    }
+
+    &:hover {
+      &::after {
+        right: -5px;
+      }
+      border-bottom: 2px solid $color-secondary;
+      transition: all 0.6s ease 0s;
+    }
+  }
+}
+
+.text {
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+}
