@@ -1,28 +1,25 @@
 .book {
-    background-image: url(../img/bg-demo.png);
-    min-height: 330px;
-    width: 100%;
+  background-image: url(../img/bg-demo.png);
+  min-height: 330px;
+  width: 100%;
 
+  &__item {
+    text-align: center;
+  }
 
-
-    &__item {
-        text-align: center;
+  &__title {
+    h2 {
+      color: #fff;
     }
+  }
 
-    &__title {
-        h2 {
-            color: #fff;
-        }
+  &__form {
+    display: flex;
+    justify-content: center;
+    padding-top: 39px;
+
+    form {
+      width: 100%;
     }
-
-    &__form {
-        display: flex;
-        justify-content: center;
-        padding-top: 39px;
-
-        form {
-            width: 100%;
-
-        }
-    }
+  }
 }

@@ -1,57 +1,67 @@
 .slider {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 
-    h2 {
-        text-align: center;
+  h2 {
+    text-align: center;
+  }
+
+  .owl-carousel {
+    max-width: 1050px;
+    padding-top: 75px;
+    width: 100%;
+    margin: 0 auto;
+
+    .owl-nav {
+      font-size: 70px;
+      color: $color-secondary;
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        transition: 0.5s ease all;
+        &:hover {
+          transition: 0.5s ease all;
+          color: black;
+        }
+      }
+
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transition: 0.5s ease all;
+        &:hover {
+          transition: 0.5s ease all;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .slider-item {
+    background-color: #fff;
+
+    .slider-title {
+      img {
+        width: max-content;
+        margin: 20px auto;
+      }
     }
 
-    .owl-carousel {
-        max-width: 1050px;
-        padding-top: 75px;
-        width: 100%;
-        margin: 0 auto;
-
-
-        .owl-nav {
-            font-size: 70px;
-            color: $color-secondary;
-
-            .owl-prev {
-                position: absolute;
-                top: 50%;
-                left: -30px;
-            }
-
-            .owl-next {
-                position: absolute;
-                top: 50%;
-                right: -30px;
-            }
-
-        }
+    .slider-text {
+      max-width: 200px;
+      width: 100%;
+      margin: 20px auto;
+      padding-bottom: 40px;
+      text-align: center;
+      color: $color-secondary;
+      font-weight: 700;
+      transition: 0.5s ease all;
+      &:hover {
+        transition: 0.5s ease all;
+        color: black;
+      }
     }
-
-    .slider-item {
-        background-color: #fff;
-
-        .slider-title {
-            img {
-                width: max-content;
-                margin: 20px auto;
-
-
-            }
-        }
-
-        .slider-text {
-            max-width: 200px;
-            width: 100%;
-            margin: 20px auto;
-            padding-bottom: 40px;
-            text-align: center;
-            color: $color-secondary;
-            font-weight: 700;
-        }
-
-    }
+  }
 }

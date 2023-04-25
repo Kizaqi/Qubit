@@ -7,8 +7,8 @@
 @import "connect";
 @import "book-demo";
 @import "social";
-@import "footer";
 @import "header";
+@import "footer";
 
 .button-purple {
   padding: 13px 34px;
@@ -42,6 +42,7 @@
   height: auto;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
   &__block {
     width: 50%;
@@ -81,12 +82,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
     padding: 20px 0;
     flex-wrap: wrap;
 
     .item {
       a {
         display: block;
+        margin: 15px;
         cursor: pointer;
       }
     }
@@ -123,6 +126,11 @@ form {
     text-align: center;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s ease all;
+    &:hover {
+      color: black;
+      transition: 0.5s ease all;
+    }
   }
 }
 
